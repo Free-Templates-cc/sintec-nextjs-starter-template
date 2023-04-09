@@ -9,7 +9,7 @@ import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
 import Blog from '@/components/Blog/Blog';
 
-export default function HomePage() {
+export default function SingleBlogPage() {
   return <>
   <Head>
         <title>Sintec Nextjs Starter Template</title>
