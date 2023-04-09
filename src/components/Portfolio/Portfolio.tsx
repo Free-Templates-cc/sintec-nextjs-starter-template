@@ -1,16 +1,20 @@
 import Image from 'next/image'
 import React from 'react'
 
-type Props = {}
+type Props = {
+  showHeading?: boolean;
+}
 
-const Portfolio = (props: Props) => {
+const Portfolio = ({ showHeading = true }: Props) => {
   return (
     <section className="portfolio_area area-padding" id="portfolio">
         <div className="container">
-          <div className="area-heading">
+          
+          {showHeading ? (<div className="area-heading">
             <h3 className="line">Our Recent Project</h3>
             <p>Together female let signs for for fish fowl may first.</p>
-          </div>
+          </div>) : null}
+
           <div className="filters portfolio-filter">
             <ul>
               <li className="active" data-filter="*">

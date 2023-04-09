@@ -1,13 +1,9 @@
 import Head from 'next/head';
 import Header from '@/components/Header/Header';
-import HomeBanner from '@/components/HomeBanner/HomeBanner';
-import About from '@/components/About/About';
-import Services from '@/components/Services/Services';
-import Stats from '@/components/Stats/Stats';
 import Portfolio from '@/components/Portfolio/Portfolio';
 import Testimonials from '@/components/Testimonials/Testimonials';
 import Footer from '@/components/Footer/Footer';
-import Blog from '@/components/Blog/Blog';
+import PageHeader from '@/components/PageHeader/PageHeader';
 
 export default function ProjectsPage() {
   return <>
@@ -18,13 +14,13 @@ export default function ProjectsPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <HomeBanner />
-      <About />
-      <Services />
-      <Stats />
-      <Portfolio />
+
+      <PageHeader title="Our Projects" navTitle="Projects" />
+      
+
+      <Portfolio showHeading={false} />
       <Testimonials />
-      <Blog />
+
       <Footer />
   </>
 }
