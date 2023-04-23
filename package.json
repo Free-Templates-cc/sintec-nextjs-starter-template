@@ -1,14 +1,16 @@
 {
-  "name": "sintec-nextjs-contentful-typescript",
+  "name": "sintec-nextjs-starter-template",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "npm run build && next export"
   },
   "dependencies": {
+    "@next/font": "^13.3.1",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
